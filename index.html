@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" type="image/png" href="imagens\Ico.png">
+    <link rel="stylesheet" href="estilos.css"> <!-- Linkagem do css -->
+    <link rel="stylesheet" href="medias.css"> <!-- CSS com as tags "Media" separadas -->
+    <title>Gabriel Siriani</title> <!-- Título da barra de navegação -->
+</head>
+
+<body>
+    <header id="header">
+        <!-- Tag geral da header -->
+        <div id="header_main">
+            <!-- Tag do conteúdo da header -->
+            <img class="logo" id="logo_header" src="imagens\header\logo.svg">
+            <div id="buttons_header_main">
+                <!-- Div geral dos botões da header -->
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </button>
+                <a class="btn_header" href="#">SOBRE MIM</a> <!-- "a" direciona para sessões do site -->
+                <a class="btn_header" href="#">HABILIDADES</a>
+                <a class="btn_header" href="#">PORTIFÓLIO</a>
+                <a class="btn_header" href="#">CONTATO</a>
+            </div>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div tabindex="0" onclick="closeSidebar()" id="content_main">
+        <!-- Div que engloba todo o conteúdo do site-->
+        <h1>Gabriel Siriani</h1>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
