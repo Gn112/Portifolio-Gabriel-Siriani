@@ -12,14 +12,16 @@
     --color-blue2: #296EBF;
 }
 
-* { /* Remove margin e padding de todos os elementos do html */
+* {
+    /* Remove margin e padding de todos os elementos do html */
     margin: 0;
     padding: 0;
 }
 
-body { /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
+body {
+    /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
     background-color: var(--color-back);
-    font-family: 'Montserrat';
+    font-family: 'Inter';
     color: var(--color-branquinho);
 }
 
@@ -34,7 +36,8 @@ body { /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
 #buttons_header_main {
     z-index: 2;
     display: flex;
-    gap: 1.5em; /* Atribui um espaçamento entre os elementos */
+    gap: 1.5em;
+    /* Atribui um espaçamento entre os elementos */
 }
 
 .btn_header {
@@ -44,7 +47,8 @@ body { /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
     font-weight: 500;
     letter-spacing: 2px;
     color: var(--color-branquinho);
-    text-decoration: none; /* Remove a underline dos 'Links' */
+    text-decoration: none;
+    /* Remove a underline dos 'Links' */
     transition: 1s;
 }
 
@@ -56,8 +60,68 @@ body { /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
     display: none;
 }
 
-#content_main { /* Div que engloba todo o conteúdo  */
-    padding: 1% 10%;
-    text-align: center;
+#content_main {
+    /* Div que engloba todo o conteúdo  */
+    padding: 5% 10%;
+    text-align: left;
     transition: 1s;
+}
+
+h2 {
+    color: var(--color-blue1);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 20px 4px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+h1 {
+    color: var(--color-branquinho);
+    font-size: 70px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+h3 {
+    color: var(--color-blue1);
+    font-size: 70px;
+    margin: 0 0 30px 4px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+.aboutMe {
+    margin: 0 0 10px 4px;
+    /*letter-spacing: 1px;*/
+}
+
+#about_me_pt1 {
+    max-width: 700px;
+}
+
+#about_me_pt2 {
+    max-width: 800px;
+    margin: 0 0 60px 4px;
+}
+
+.highlight_text {
+    color: var(--color-blue1);
+    font-weight: 700;
+}
+
+.buttons_tp1 {
+    background-color: var(--color-blue2);
+    color: var(--color-branquinho);
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.buttons_tp1:hover {
+    background-color: var(--color-branquinho);
+    color: var(--color-blue2);
 }
