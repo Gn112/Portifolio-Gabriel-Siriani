@@ -2,8 +2,11 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="imagens\Ico.png">
-    <link rel="stylesheet" href="estilos.css"> <!-- Linkagem do css -->
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="medias.css"> <!-- CSS com as tags "Media" separadas -->
     <title>Gabriel Siriani</title> <!-- Título da barra de navegação -->
 </head>
@@ -40,7 +43,7 @@
 
     <div tabindex="0" onclick="closeSidebar()" id="content_main">
         <!-- Div que engloba todo o conteúdo do site-->
-        <div id="presentation_box">
+        <div id="home">
             <h2>Olá, eu sou o</h2>
             <h1>Gabriel Siriani</h1>
             <h3>Eu faço sitezinho colorido</h3>
@@ -56,6 +59,64 @@
             </div>
             <button class="buttons_tp1">Meus Projetos</button>
         </div>
+
+        <div id="sobreMim">
+            <div id="mainSobre">
+                <h4>SOBRE&nbspMIM</h4> <!-- "&nbsp" serve para previnir quebra de linha-->
+                <div class="about_me_box">
+                    <p class="aboutMe">Olá! Me chamo <span
+                        class="highlight_text">Gabriel Siriani</span>, gosto de criar sites para a internet e desing de
+                        interfaces!</p>
+                    <p class="aboutMe">
+                        Meu interesse pela área começou no meu curso técnico de informática, onde tive contato com as
+                        ferramentas do <span
+                        class="highlight_text">Figma e Canva</span>, e as linguagens <span
+                        class="highlight_text">HTML & CSS</span>. A partir daí começei a ter paixão pela
+                        área de <span
+                        class="highlight_text">desenvolvimento web</span> e <span
+                        class="highlight_text">UI desing</span>.
+                    </p>
+                    <p class="aboutMe">
+                        Atualmente busco melhorar minhas habilidades nessas áreas e estou aprendendo <span
+                        class="highlight_text">JavaScript</span>.
+                    </p>
+                </div>
+            </div>
+            <div id="bannersSobre">
+                <div class="bannerBox" id="banner1">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="school" src="imagens/assets/school.png">
+                        <h5 class="bannerTitle">EDUCAÇÃO</h5>
+                        <span class="bannerText">COLÉGIO COTEMIG</span>
+                        <span class="bannerText">ENSINO MÉDIO COM TÉCNICO EM INFORMÁTICA</span>
+                        <span class="bannerText">JAN/2021 - DEZ/2023</span>
+                    </div>
+                </div>
+                <div class="bannerBox" id="banner2">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="work" src="imagens/assets/opentag.png">
+                        <h5 class="bannerTitle">experiência/trabalho</h5>
+                        <span class="bannerText">prodabel</span>
+                        <span class="bannerText">estagiário em redes</span>
+                        <span class="bannerText">ago/2022 - PRESENTE</span>
+                    </div>
+                </div>
+                <div class="bannerBox" id="banner3">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="work" src="imagens/assets/book.png">
+                        <h5 class="bannerTitle">hobbies</h5>
+                        <span class="bannerText">jogos, leitura, ouvir podcasts</span>
+                        <span class="bannerText">aprender dev web & desing</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
 

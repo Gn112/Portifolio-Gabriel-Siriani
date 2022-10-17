@@ -5,11 +5,16 @@
 :root {
     /* Variável de cores (para não ter que alterar em cada elemente se necessário) */
     --color-branquinho: #ffffff;
+    --color-black: black;
     --color-back: #001220;
     --color-backDarker: #050D14;
     --color-blue0: #94DEF5;
     --color-blue1: #82D0E9;
     --color-blue2: #296EBF;
+    --color-red: #A01616;
+    --color-rosy: #B81164;
+    --color-rosa: #AD10AD;
+
 }
 
 * {
@@ -21,7 +26,7 @@
 body {
     /* Seleciona a cor de fundo do site, estilo de fonte principal e cor */
     background-color: var(--color-back);
-    font-family: 'Inter';
+    font-family: 'Inter', 'Monstserrat';
     color: var(--color-branquinho);
 }
 
@@ -41,7 +46,7 @@ body {
 }
 
 .btn_header {
-    border: 1px solid #296EBF;
+    border: 1px solid var(--color-blue2);
     padding: 8px;
     font-size: 12px;
     font-weight: 500;
@@ -49,7 +54,7 @@ body {
     color: var(--color-branquinho);
     text-decoration: none;
     /* Remove a underline dos 'Links' */
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .btn_icon_header {
@@ -60,9 +65,15 @@ body {
     display: none;
 }
 
+.btn_header:hover {
+    background-color: var(--color-branquinho);
+    color: var(--color-blue2);
+    border: 1px solid var(--color-branquinho);
+}
+
 #content_main {
     /* Div que engloba todo o conteúdo  */
-    padding: 5% 10%;
+    padding: 8% 10%;
     text-align: left;
     transition: 1s;
 }
@@ -89,7 +100,7 @@ h3 {
 }
 
 .aboutMe {
-    margin: 0 0 10px 4px;
+    margin: 0 0 15px 4px;
     /*letter-spacing: 1px;*/
 }
 
@@ -105,6 +116,11 @@ h3 {
 .highlight_text {
     color: var(--color-blue1);
     font-weight: 700;
+    transition: 1s;
+}
+
+.highlight_text:hover{
+    border-bottom: 1px solid var(--color-blue1);
 }
 
 .buttons_tp1 {
@@ -119,9 +135,104 @@ h3 {
     border-radius: 7px;
     padding: 10px 20px;
     transition: 0.5s;
+    margin: 0 0 60px 4px;
 }
 
 .buttons_tp1:hover {
     background-color: var(--color-branquinho);
     color: var(--color-blue2);
+}
+
+
+
+h4 {
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 48px;
+    color: var(--color-blue1);
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5);
+    margin: 0 0 30px 4px;
+}
+
+h4::after {
+    content:'';
+    display: inline-block;
+    width: 100%;
+    margin-left: 20px;
+    border-bottom: 1px solid var(--color-blue0);
+}
+
+.about_me_box {
+    max-width: 700px;
+}
+
+#bannersSobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+    margin: 100px 0 100px 0;
+    padding: 0 0 50px 0;
+    border-bottom: 1px solid var(--color-blue0);
+}
+
+.bannerBox {
+    width: 345px;
+    height: 400px;
+    background-color: var(--color-branquinho);
+    border-radius: 0 0 10px 10px;
+}
+
+.topColor {
+    position: relative;
+    top: 0;
+    width: 345px;
+    height: 18px;
+}
+
+#banner1 .topColor {
+    background-color: var(--color-red);
+}
+
+#banner2 .topColor {
+    background-color: var(--color-rosy);
+}
+
+#banner2 .bannerText {
+    color: var(--color-rosy);
+}
+
+#banner3 .bannerText {
+    color: var(--color-rosa);
+}
+
+#banner3 .topColor {
+    background-color: var(--color-rosa);
+}
+
+.innerContainer {
+    display: flex;
+    margin: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerTitle {
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 20px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerText {
+    color: var(--color-red);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px 0;
+    text-transform: uppercase;
 }
