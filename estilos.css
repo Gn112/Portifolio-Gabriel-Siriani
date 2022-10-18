@@ -135,15 +135,13 @@ h3 {
     border-radius: 7px;
     padding: 10px 20px;
     transition: 0.5s;
-    margin: 0 0 60px 4px;
+    margin: 0 0 150px 4px;
 }
 
 .buttons_tp1:hover {
     background-color: var(--color-branquinho);
     color: var(--color-blue2);
 }
-
-
 
 h4 {
     display: flex;
@@ -235,4 +233,37 @@ h4::after {
     text-align: center;
     margin: 5px 0;
     text-transform: uppercase;
+}
+
+#mainHabilidades .about_me_box {
+    display: flex;
+    flex-direction: column;
+}
+
+#table_main {
+    display: flex;
+    gap: 50px;
+}
+
+.table_icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 500px;
+    height: auto;
+    gap: 30px;
+}
+
+.icon_box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 210px;
+
+}
+
+.icon-label {
+    font-weight: 700;
+    font-size: 20px;
 }
