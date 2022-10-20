@@ -99,6 +99,10 @@ h3 {
     text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
 }
 
+#aboutME {
+    margin: 0 0 15px 0;
+}
+
 
 #about_me_pt1 {
     max-width: 700px;
@@ -162,14 +166,16 @@ h4::after {
     max-width: 700px;
 }
 
+.about_me_box .aboutMe {
+    margin: 0 0 15px 0;
+}
+
 .bannersSobre {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
+    margin: 30px 0 30px 0;
 }
 
 .bannerBox {
@@ -208,7 +214,7 @@ h4::after {
 .innerContainer {
     display: flex;
     margin: 5%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
 }
