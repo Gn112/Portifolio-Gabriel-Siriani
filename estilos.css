@@ -319,9 +319,4 @@ h6::after {
 }
 
 .siteBanner {
-    width: 450px;
-    height: 340px;
-    background-color: var(--color-branquinho);
-    border-radius: 10px;
-    background: linear-gradient(0deg, rgba(20, 0, 29, 0.53);
     }
