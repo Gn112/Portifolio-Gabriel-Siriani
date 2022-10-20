@@ -19,12 +19,21 @@
         margin-left: -100vw;
     }
 
+    #header_main {
+        padding: 5% 5%;
+    }
+
     #logo_header {
         width: 100px;
     }
 
     #content_main {
-        padding: 5% 10%;
+        padding: 5% 15%;
+    }
+
+    .aboutMe {
+        font-size: 11px;
+        margin: 0 0 15px 4px;
     }
 
     h1 {
