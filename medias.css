@@ -28,7 +28,7 @@
     }
 
     #content_main {
-        padding: 5% 15%;
+        padding: 5% 10%;
     }
 
     .aboutMe {
@@ -37,11 +37,19 @@
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     h3 {
-        font-size: 30px
+        font-size: 35px
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 25px;
     }
 
 
