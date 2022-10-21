@@ -1,0 +1,36 @@
+#content_main {
+    /* Div que engloba todo o conteúdo  */
+    padding: 8% 10%;
+    text-align: left;
+    transition: 1s;
+}
+
+h2 {
+    color: var(--color-blue1);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 20px 4px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+h1 {
+    color: var(--color-branquinho);
+    font-size: 70px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+h3 {
+    color: var(--color-blue1);
+    font-size: 70px;
+    margin: 0 0 30px 4px;
+    text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
+}
+
+#about_me_pt1 {
+    max-width: 700px;
+}
+
+#about_me_pt2 {
+    max-width: 800px;
+    margin: 0 0 60px 4px;
+}

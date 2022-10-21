@@ -1,0 +1,19 @@
+#banner1 .topColor {
+    background-color: var(--color-red);
+}
+
+#banner2 .topColor {
+    background-color: var(--color-rosy);
+}
+
+#banner2 .bannerText {
+    color: var(--color-rosy);
+}
+
+#banner3 .bannerText {
+    color: var(--color-rosa);
+}
+
+#banner3 .topColor {
+    background-color: var(--color-rosa);
+}
