@@ -99,10 +99,6 @@ h3 {
     text-shadow: -2px 6px 2px rgba(0, 0, 0, 0.5)
 }
 
-#aboutME {
-    margin: 0 0 15px 0;
-}
-
 
 #about_me_pt1 {
     max-width: 700px;
@@ -162,8 +158,14 @@ h4::after {
     border-bottom: 1px solid var(--color-blue0);
 }
 
+.aboutMe {
+    line-height: 1.3;
+    text-align: justify;
+}
+
 .about_me_box {
     max-width: 700px;
+    text-align: left;
 }
 
 .about_me_box .aboutMe {
@@ -249,7 +251,7 @@ h4::after {
 
 #table_main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: 20px;
     margin: 10px 0 0 0;
 }
@@ -299,11 +301,6 @@ h4::after {
     background-color: var(--color-rosa);
 }
 
-.siteMain {
-    display: flex;
-    justify-content: space-between;
-}
-
 h6 {
     display: flex;
     align-items: center;
@@ -320,6 +317,12 @@ h6::after {
     width: 100%;
     margin-left: 20px;
     border-bottom: 1px solid var(--color-blue0);
+}
+
+.siteMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .siteBanner {
