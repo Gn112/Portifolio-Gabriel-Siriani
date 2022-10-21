@@ -323,7 +323,13 @@ h6::after {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
-.siteBanner {
-    }
+.description .about_me_box {
+    max-width: 500px;
+}
+
+.siteBanner img {
+    max-width: 400px;
+}
