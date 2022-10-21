@@ -74,6 +74,20 @@
 
 }
 
+@media screen and (max-width: 1200px) {
+    .bannersSobre {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 930px){
+    .siteBanner img {
+        max-width: 300px;
+    } 
+}
+
 @keyframes showSidebar {
     from {
         margin-left: -100vw;
