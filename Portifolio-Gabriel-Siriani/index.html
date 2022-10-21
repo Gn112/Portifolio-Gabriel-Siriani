@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="imagens\Ico.png">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="medias.css"> <!-- CSS com as tags "Media" separadas -->
+    <title>Gabriel Siriani</title> <!-- Título da barra de navegação -->
+</head>
+
+<body>
+    <header id="header">
+        <!-- Tag geral da header -->
+        <div id="header_main">
+            <!-- Tag do conteúdo da header -->
+            <img class="logo" id="logo_header" src="imagens\header\logo.svg">
+            <div id="buttons_header_main">
+                <!-- Div geral dos botões da header -->
+                <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </button>
+                <a class="btn_header" href="#">SOBRE MIM</a> <!-- "a" direciona para sessões do site -->
+                <a class="btn_header" href="#">HABILIDADES</a>
+                <a class="btn_header" href="#">PORTIFÓLIO</a>
+                <a class="btn_header" href="#">CONTATO</a>
+            </div>
+            <button onclick="toggleSidebar()" class="btn_icon_header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div tabindex="0" onclick="closeSidebar()" id="content_main">
+        <!-- Div que engloba todo o conteúdo do site-->
+        <div id="home">
+            <!--Início da página-->
+            <h2>Olá, eu sou o</h2>
+            <h1>Gabriel Siriani</h1>
+            <h3>Desenvolvedor Front-End</h3>
+            <div id="about_me_box">
+                <p class="aboutMe" id="about_me_pt1">Sou um Estudante de Ti, Estagiário em Redes e atualmente busco me
+                    tornar um <span class="highlight_text">Desenvolvedor Front-End & UI Designer</span>.</p>
+                <p class="aboutMe" id="about_me_pt2">Desenvolvi projetos criação de sites utilizando <span
+                        class="highlight_text">HTML & CSS</span>, e estou
+                    começando a aprender linguagem JavaScript. Além de projetar Wireframes e Mockups com o <span
+                        class="highlight_text">Figma</span>.</p>
+                <button class="buttons_tp1">Meus Projetos</button>
+            </div>
+
+        </div>
+
+        <div id="section_sobreMim">
+            <!--1º Sobre Mim-->
+            <div id="mainSobre">
+                <h4>SOBRE&nbspMIM</h4> <!-- "&nbsp" serve para previnir quebra de linha-->
+                <div class="about_me_box">
+                    <p class="aboutMe">Olá! Me chamo <span class="highlight_text">Gabriel Siriani</span>, gosto de criar
+                        sites para a internet e desing de
+                        interfaces!</p>
+                    <p class="aboutMe">
+                        Meu interesse pela área começou no meu curso técnico de informática, onde tive contato com as
+                        ferramentas do <span class="highlight_text">Figma e Canva</span>, e as linguagens <span
+                            class="highlight_text">HTML & CSS</span>. A partir daí começei a ter paixão pela
+                        área de <span class="highlight_text">desenvolvimento web</span> e <span
+                            class="highlight_text">UI desing</span>.
+                    </p>
+                    <p class="aboutMe">
+                        Atualmente busco melhorar minhas habilidades nessas áreas e estou me aperfeiçoando em <span
+                            class="highlight_text">JavaScript & ReactJS</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="bannersSobre">
+                <div class="bannerBox" id="banner1">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="school" src="imagens/assets/school.png">
+                        <h5 class="bannerTitle">EDUCAÇÃO</h5>
+                        <span class="bannerText">COLÉGIO COTEMIG</span>
+                        <span class="bannerText">ENSINO MÉDIO COM TÉCNICO EM INFORMÁTICA</span>
+                        <span class="bannerText">JAN/2021 - DEZ/2023</span>
+                    </div>
+                </div>
+                <div class="bannerBox" id="banner2">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="work" src="imagens/assets/opentag.png">
+                        <h5 class="bannerTitle">experiência/trabalho</h5>
+                        <span class="bannerText">prodabel</span>
+                        <span class="bannerText">estagiário em redes</span>
+                        <span class="bannerText">ago/2022 - PRESENTE</span>
+                    </div>
+                </div>
+                <div class="bannerBox" id="banner3">
+                    <div class="topColor"></div>
+                    <div class="innerContainer">
+                        <img id="work" src="imagens/assets/book.png">
+                        <h5 class="bannerTitle">hobbies</h5>
+                        <span class="bannerText">jogos, leitura, ouvir podcasts</span>
+                        <span class="bannerText">aprender dev web & desing</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="section_habilidades">
+            <div id="mainHabilidades">
+                <h4>HABILIDADES</h4>
+                <div class="about_me_box">
+                    <div>
+                        <p class="aboutMe">Tenho experiência em desenvolver sites usando <span
+                                class="highlight_text">HTML, CSS & JAVASCRIPT</span>. Tambem
+                            utilizo a linguagem <span class="highlight_text">C#</span> para criação de programas com
+                            Windows Forms.</p>
+                        <p class="aboutMe">Utilizo as ferramentas do <span class="highlight_text">Figma</span> para a
+                            criação de <span class="highlight_text">Wireframes, Mockups</span> e a interface de meus
+                            projetos.</p>
+
+                    </div>
+
+                    <div id="table_main">
+                        <div class="table_icons">
+                            <div class="icon_box">
+                                <img src="imagens/assets/html-icon.svg" alt="html-icon">
+                                <span class="icon-label">HTML</span>
+                            </div>
+                            <div class="icon_box">
+                                <img src="imagens/assets/css-icon.svg" alt="css-icon">
+                                <span class="icon-label">CSS</span>
+                            </div>
+                            <div class="icon_box">
+                                <img src="imagens/assets/js-icon.svg" alt="javascript-icon">
+                                <span class="icon-label">JavaScript</span>
+                            </div>
+                            <div class="icon_box">
+                                <img src="imagens/assets/figma-icon.svg" alt="figma-icon">
+                                <span class="icon-label">FIGMA</span>
+                            </div>
+                            <div class="icon_box">
+                                <img src="imagens/assets/ps-icon.svg" alt="photoshop-icon">
+                                <span class="icon-label">PHOTOSHOP</span>
+                            </div>
+                            <div class="icon_box">
+                                <img src="imagens/assets/Csharp-icon.svg" alt="C#-icon">
+                                <span class="icon-label">C#</span>
+                            </div>
+
+                        </div>
+                        <div id="habilities_info">
+                            <span>/* Passe o mouse nos ícones */</span>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="bannersSobre">
+                    <div class="bannerBox" id="banner4">
+                        <div class="topColor"></div>
+                        <div class="innerContainer">
+                            <h5 class="bannerTitle">Wireframes</h5>
+                            <img id="wire" src="imagens/assets/wireframe.svg">
+                        </div>
+                    </div>
+                    <div class="bannerBox" id="banner5">
+                        <div class="topColor"></div>
+                        <div class="innerContainer">
+                            <h5 class="bannerTitle">Mockups & UI Design</h5>
+                            <img id="mock" src="imagens/assets/mockup.svg">
+                        </div>
+                    </div>
+                    <div class="bannerBox" id="banner6">
+                        <div class="topColor"></div>
+                        <div class="innerContainer">
+                            <h5 class="bannerTitle">Sites</h5>
+                            <img id="site" src="imagens/assets/sites.svg">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="section_portifolio">
+            <div id="mainPortifolio">
+                <h4>PORTIFÓLIO</h4>
+                <div class="siteMain">
+                    <div class="description">
+                        <div class="about_me_box">
+                            <h6>Booker</h6>
+                            <p class="aboutMe">Um site de e-commerce com um visual minimalista.</p>
+                            <p class="aboutMe">
+                                Me inspirei no site da Amazon e da Leitura, mas sempre
+                                achei que esses sites possuem um <span class="highlight_text">visual desnecessariamente
+                                    sujo</span> e <span class="highlight_text">pouco intuitivo</span>,
+                                então uma das minhas características dos meus sites é possuir um <span
+                                    class="highlight_text">visual limpo, mínimo</span> e
+                                bastante <span class="highlight_text">intuitivo<span class="highlight_text"></span>.</p>
+                            <p class="aboutMe">Desenvolvido com <span class="highlight_text">HTML & CSS apenas</span>.
+                            </p>
+                            <p class="aboutMe">Projetado no <span class="highlight_text">Figma</span>.</p>
+                            <p class="aboutMe">booker.com</p>    
+                        </div>
+                    </div>
+                    <div class="siteBox">
+                        <div class="siteBanner">
+                            <img src="imagens/assets/booker.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+</body>
+<script src="nav-bar.js"></script>
+<!--Linkagem do JavaScript-->
+
+</html>
