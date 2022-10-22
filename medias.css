@@ -72,6 +72,11 @@
         height: 14px;
     }
 
+    .siteBanner {
+        opacity: 0.8;
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -83,9 +88,7 @@
 }
 
 @media screen and (max-width: 930px){
-    .siteBanner img {
-        max-width: 300px;
-    } 
+
 }
 
 @keyframes showSidebar {

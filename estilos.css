@@ -164,8 +164,8 @@ h4::after {
 }
 
 .aboutMe {
-    line-height: 1.3;
-    text-align: justify;
+    text-align: left;
+    letter-spacing: 0.7px;
 }
 
 .about_me_box {
@@ -290,6 +290,7 @@ h4::after {
 .icon-label {
     font-weight: 700;
     font-size: 20px;
+    display: none;
 }
 
 #habilities_info span {
@@ -332,12 +333,37 @@ h6::after {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px;
+    margin: 120px 0;
 }
 
 .description .about_me_box {
     max-width: 500px;
 }
 
-.siteBanner img {
-    max-width: 400px;
+.siteBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 400px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#booker {
+    background: url(imagens/assets/booker.png) no-repeat center;
+}
+
+#yari {
+    background: url(imagens/assets/yari.png) no-repeat center;
+}
+
+#cotemig {
+    background: url(imagens/assets/cotemig.png) no-repeat center;
+}
+
+#spot {
+    background: url(imagens/assets/spotclone.svg) no-repeat top;
+    align-items: flex-end;
 }
