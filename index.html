@@ -26,10 +26,10 @@
                             d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
                     </svg>
                 </button>
-                <a class="btn_header" href="#">SOBRE MIM</a> <!-- "a" direciona para sessões do site -->
-                <a class="btn_header" href="#">HABILIDADES</a>
-                <a class="btn_header" href="#">PORTIFÓLIO</a>
-                <a class="btn_header" href="#">CONTATO</a>
+                <a class="btn_header" href="#section_sobreMim">SOBRE MIM</a> <!-- "a" direciona para sessões do site -->
+                <a class="btn_header" href="#section_habilidades">HABILIDADES</a>
+                <a class="btn_header" href="#section_portifolio">PORTIFÓLIO</a>
+                <a class="btn_header" href="#section_contato">CONTATO</a>
             </div>
             <button onclick="toggleSidebar()" class="btn_icon_header">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
@@ -46,7 +46,9 @@
         <div id="home">
             <!--Início da página-->
             <h2>Olá, eu sou o</h2>
-            <h1>Gabriel Siriani</h1>
+            <div id="title">
+                <h1>Gabriel Siriani</h1>
+            </div>
             <h3>Desenvolvedor Front-End</h3>
             <div id="about_me_box">
                 <p class="aboutMe" id="about_me_pt1">Sou um Estudante de Ti, Estagiário em Redes e atualmente busco me
@@ -54,7 +56,9 @@
                 <p class="aboutMe" id="about_me_pt2">Desenvolvi projetos criação de sites utilizando <span
                         class="highlight_text">HTML, CSS & JavaScript</span>. Além de projetar Wireframes e Mockups com
                     o <span class="highlight_text">Figma</span>.</p>
-                <button class="buttons_tp1">Meus Projetos</button>
+                <a href="#section_portifolio">
+                    <button class="buttons_tp1">Meus Projetos</button>
+                </a>
             </div>
 
         </div>
@@ -232,12 +236,16 @@
                     <div class="description">
                         <div class="about_me_box">
                             <h6>YariNime</h6>
-                            <p class="aboutMe"><span class="highlight_text">Meu primeiro site</span> “intermediário” que criei, baseado em sites de
+                            <p class="aboutMe"><span class="highlight_text">Meu primeiro site</span> “intermediário” que
+                                criei, baseado em sites de
                                 streaming de animes como BetterAnime.</p>
                             <p class="aboutMe">
-                                Foi o primeiro site que criei, busquei uma interface <span class="highlight_text">intuitiva</span> e <span class="highlight_text">detalhada</span>, apesar de
+                                Foi o primeiro site que criei, busquei uma interface <span
+                                    class="highlight_text">intuitiva</span> e <span
+                                    class="highlight_text">detalhada</span>, apesar de
                                 ter <span class="highlight_text">pouquíssima experiência na época</span>.</p>
-                            <p class="aboutMe">Desenvolvido com<span class="highlight_text"> HTML & CSS básicos apenas</span>.
+                            <p class="aboutMe">Desenvolvido com<span class="highlight_text"> HTML & CSS básicos
+                                    apenas</span>.
                             </p>
                             <p class="aboutMe">Projetado no <span class="highlight_text">Figma</span>.</p>
                             <p class="aboutMe">
@@ -260,13 +268,15 @@
                     <div class="description">
                         <div class="about_me_box">
                             <h6>Reprodução&nbspCotemig</h6>
-                            <p class="aboutMe">Projeto de <span class="highlight_text">reprodução de interface</span>, fiél ao site do Colégio Cotemig. Um
-                                dos meus <span class="highlight_text">primeiros</span> e mais <span class="highlight_text">básicos</span> trabalhos de reprodução de sites.</p>
+                            <p class="aboutMe">Projeto de <span class="highlight_text">reprodução de interface</span>,
+                                fiél ao site do Colégio Cotemig. Um
+                                dos meus <span class="highlight_text">primeiros</span> e mais <span
+                                    class="highlight_text">básicos</span> trabalhos de reprodução de sites.</p>
                             <p class="aboutMe">
                                 Desenvolvido com <span class="highlight_text">HTML & CSS</span>.</p>
                             <p class="aboutMe">
                                 <a href="https://gabriel-siriani-13-reproducao-cotemig.netlify.app/" target="_blank">
-                                gabriel-siriani-13-reproducao-cotemig.netlify.app/
+                                    gabriel-siriani-13-reproducao-cotemig.netlify.app/
                                 </a>
                             </p>
                         </div>
@@ -335,9 +345,9 @@
             </div>
         </div>
     </div>
-        <div id="botton_wave">
-            <img src="imagens/wave.svg">
-        </div>
+    <div id="botton_wave">
+        <img src="imagens/wave.svg">
+    </div>
 
 
 
