@@ -138,6 +138,7 @@ h3 {
     padding: 10px 20px;
     transition: 0.5s;
     margin: 0 0 150px 0;
+    cursor: pointer;
 }
 
 .buttons_tp1:hover {
@@ -294,7 +295,6 @@ h4::after {
 .icon-label {
     font-weight: 700;
     font-size: 20px;
-    display: none;
 }
 
 #habilities_info span {
