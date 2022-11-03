@@ -21,6 +21,7 @@
     /* Remove margin e padding de todos os elementos do html */
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
